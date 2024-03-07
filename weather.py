@@ -64,32 +64,35 @@ class WeatherInformation:
             return f"Wear shorts, the weather condition is {weather_condition}" if is_sunny else f"Wear long pants! The current weather condition is {weather_condition}"
         return "Unable to get weather data, weather condition is unknown"
 
-my_current_addreess = Address("937 Westridge Dr","Saint George","UT",84770)
-my_current_address_weather_info = WeatherInformation(my_current_addreess)
+def main():
+    my_current_addreess = Address("937 Westridge Dr","Saint George","UT",84770)
+    my_current_address_weather_info = WeatherInformation(my_current_addreess)
 
-my_previous_address = Address("27932 Kelley Johnson Pkwy", "Santa Clarita", "CA", 91355)
-my_previous_address_weather_info = WeatherInformation(my_previous_address)
+    my_previous_address = Address("27932 Kelley Johnson Pkwy", "Santa Clarita", "CA", 91355)
+    my_previous_address_weather_info = WeatherInformation(my_previous_address)
 
 
-current_address_current_temp = my_current_address_weather_info.current_temperature
-current_address_current_wind_speed = my_current_address_weather_info.current_wind_speed
-current_address_current_weather_condition = my_current_address_weather_info.current_weather_condition
-current_address_current_clothing_recommendation = my_current_address_weather_info.current_clothing_recommendation
+    current_address_current_temp = my_current_address_weather_info.current_temperature
+    current_address_current_wind_speed = my_current_address_weather_info.current_wind_speed
+    current_address_current_weather_condition = my_current_address_weather_info.current_weather_condition
+    current_address_current_clothing_recommendation = my_current_address_weather_info.current_clothing_recommendation
 
-previous_address_current_temp = my_previous_address_weather_info.current_temperature
-previous_address_current_wind_speed = my_previous_address_weather_info.current_wind_speed
-previous_address_current_weather_condition = my_previous_address_weather_info.current_weather_condition
-previous_address_current_clothing_recommendation = my_previous_address_weather_info.current_clothing_recommendation
+    previous_address_current_temp = my_previous_address_weather_info.current_temperature
+    previous_address_current_wind_speed = my_previous_address_weather_info.current_wind_speed
+    previous_address_current_weather_condition = my_previous_address_weather_info.current_weather_condition
+    previous_address_current_clothing_recommendation = my_previous_address_weather_info.current_clothing_recommendation
 
-print()
-print(f"The current temperature at my current location is {current_address_current_temp} degrees Farenheit.")
-print(f"The current wind speed at my current location is {current_address_current_wind_speed}.")
-print(f"The current weather condtion at my current location is {current_address_current_weather_condition}.")
-print(f"The current clothing recommendation at my current location is {current_address_current_clothing_recommendation}.")
+    print()
+    print(f"The current temperature at my current location is {current_address_current_temp} degrees Farenheit.")
+    print(f"The current wind speed at my current location is {current_address_current_wind_speed}.")
+    print(f"The current weather condtion at my current location is {current_address_current_weather_condition}.")
+    print(f"The current clothing recommendation at my current location is {current_address_current_clothing_recommendation}.")
 
-print()
-print(f"The current temperature at my previous location is {previous_address_current_temp} degrees Farenheit.")
-print(f"The current wind speed at my previous location is {previous_address_current_wind_speed}.")
-print(f"The current weather condtion at my previous location is {previous_address_current_weather_condition}.")
-print(f"The current clothing recommendation at my previous location is {previous_address_current_clothing_recommendation}.")
+    print()
+    print(f"The current temperature at my previous location is {previous_address_current_temp} degrees Farenheit.")
+    print(f"The current wind speed at my previous location is {previous_address_current_wind_speed}.")
+    print(f"The current weather condtion at my previous location is {previous_address_current_weather_condition}.")
+    print(f"The current clothing recommendation at my previous location is {previous_address_current_clothing_recommendation}.")
 
+if __name__ == "__main__":
+    main()
